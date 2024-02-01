@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>rectanlge,Triangle,circle</title>
+</head>
+<body>
+    <script>
+        
+        /*2. WAP to find Area using rectanlge, Triangle, circle functions.*/
+
+       /*Area using rectanlge*/
+       let a=parseFloat(prompt("Enter you rectanlge 1 height")); 
+       let b=parseFloat(prompt("Enter you rectanlge 2 width")); 
+      
+       let rectanlge=(a,b)=>a*b
+        document.write("<br> Area of rectanlge  :",rectanlge(a,b));
+
+        /*Triangle*/
+       let  c = parseFloat(prompt("Enter you Triangle 1: "))
+       let  d = parseFloat(prompt("Enter you Triangle 2:"))
+       let Triangle=(c,d)=>.5*c*d
+       document.write("<br> Area of Triangle is a :",Triangle(c,d));
+
+       /*circle*/
+       let  e = parseFloat(prompt("Enter you circle: "))
+       let circle=(e)=>(9/3*e)+32
+        //  let circle=(e)=>e*3.14*3.14
+
+       document.write("<br> Area of circle is a :",circle(e));
+
+    </script>
+    
+</body>
+</html>
