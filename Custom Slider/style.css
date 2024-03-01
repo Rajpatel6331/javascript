@@ -1,0 +1,11 @@
+body {
+	margin: 20px auto;
+	font-family: 'Lato';
+	font-weight: 300;
+	width: 850px;
+	overflow: hidden;
+  }
+  
+  .bx-wrapper {
+	margin: 0 auto;
+  }
