@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class='container'>
+     <input type="text" id="results">
+
+        <table>
+          
+          <tr>
+            <td><button class='btn'  onclick="adddata('1')" >1</button></td>
+            <td><button class='btn'  onclick="adddata('2')" >2</button></td>
+            <td><button class='btn ' onclick="adddata('3')">3</button></td>
+            <td><button class='btn operand' onclick="adddata('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class='btn' onclick="adddata('4')">4</button></td>
+            <td><button class='btn' onclick="adddata('5')">5</button></td>
+            <td><button class='btn' onclick="adddata('6')">6</button></td>
+            <td><button class='btn operand' onclick="adddata('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button class='btn' onclick="adddata('7')">7</button></td>
+            <td><button class='btn' onclick="adddata('8')">8</button></td>
+            <td><button class='btn' onclick="adddata('9')">9</button></td>
+            <td><button class='btn operand' onclick="adddata('/')">/</button></td>
+          </tr>
+          <tr>
+            <td><button class='btn' onclick="adddata('.')">.</button></td>
+            <td><button class='btn' onclick="adddata('0')">0</button></td>
+            <td><button class='btn'onclick="adddata('00')">00</button></td>
+            <td><button class='btn operand' onclick="adddata('+')">+</button></td>
+
+          </tr>
+          <tr>
+            <td><button class='btn equal stretch'onclick="clear1()">Clear</button></td>
+            <td><button class='btn operand stretch equal' onclick="nas()">=</button></td>
+          </tr>
+        </table>
+      </div>    
+
+
+
+    <script src="./Calculator.js"></script>
+    
+</body>
+</html>
