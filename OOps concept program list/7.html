@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class property{
+            constructor ( type,tire){
+                this.type = type;
+                this.tire = tire;
+            }
+
+            vehicle(){
+                document.write(`<br>Vehicle Type : ${this.type}`);
+                document.write(`<br>Number of Tires : ${this.tire}<br>`);
+            }
+
+        } 
+        let car = new property("Car",4);
+        let bus = new property("Bus",6);
+        let truck = new property("Truck",12);
+
+        car.vehicle();
+        bus.vehicle();
+        truck.vehicle();
+
+    </script>
+</body>
+</html>

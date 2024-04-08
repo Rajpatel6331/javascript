@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class student {
+            constructor(name, age, mark) {
+                this.name = name;
+                this.age = age;
+                this.mark = mark;
+            };
+
+            // student mark average
+            calculateAverage() {
+                let sum = this.mark.reduce(
+                    (a, b) => {
+                        return a + b
+                    });
+                return sum / this.mark.length;
+            }
+
+            // student all detail
+            display() {
+                document.write('Name : ', this.name);
+                document.write('<br>Age : ', this.age);
+                document.write('<br>mark : ', this.mark.join(" , "));
+                document.write('<br>Average mark : ', this.calculateAverage());
+            }
+        };
+
+        let obj = new student("virani raj", 17, [80, 74, 91, 85]);
+        obj.display();
+
+    </script>
+</body>
+
+</html>

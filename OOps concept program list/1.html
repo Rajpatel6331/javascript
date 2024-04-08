@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class student{
+        constructor(username,surname,age,salary,qualification){
+            this.name = username;
+            this.surname = surname;
+            this.age = age;
+            this.salary = salary;
+            this.qualification = qualification;
+        };
+
+        display(){
+            document.write('Name is : ',this.name);
+            document.write('<br>Surname is : ',this.surname);
+            document.write('<br>Age is : ',this.age);
+            document.write('<br>Salary is : ',this.salary);
+            document.write('<br>Qualification is : ',this.qualification.join(" , "));  
+        }
+       };
+
+       let obj = new student("raj","virani",18,30000,["10th","12th"]);
+       obj.display();
+
+    </script>
+</body>
+</html>
