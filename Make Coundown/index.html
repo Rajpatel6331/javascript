@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/2.png" type="image/x-icon">
+    <title>Make Coundown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+
+            <div class="clock">
+                <span id="hrs">00</span>  
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        let sec = 0;
+let min = 0;
+let hours = 0;
+
+function msg() {
+    sec++;
+    if (sec == 60) {
+        addminutes();
+        sec = 0;
+    }
+
+    if (min == 60) {
+        addhours();
+        min = 0;
+    }
+
+    if (hours == 12) {
+        hours = 0;
+    }
+
+    sec = (sec < 10) ? "0" + sec : sec;
+    document.getElementById("sec").innerHTML = sec;
+}
+
+function addminutes() {
+    min++;
+    min = (min < 10) ? "0" + min : min;
+    document.getElementById("min").innerHTML = min;
+}
+
+function addhours() {
+    hours++;
+    hours = (hours < 10) ? "0" + hours : hours;
+    document.getElementById("hrs").innerHTML = hours; 
+}
+setInterval(msg, 1000)
+
+    </script>
+</body>
+</html>               
